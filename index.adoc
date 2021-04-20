@@ -8,6 +8,25 @@
 
 == Introduction
 
+
+---
+Michalis Comments on the Introduction:
+
+The introduction is used to provide the MOTIVATION of your thesis to the reader. It explains why you did the work you did. This is the primary purpose of the Introduction. The current version does that only in the "So why would this be useful?" part. Here is some advice on what you can address and how you can structure your introduction.
+
+- The topic. A description of issues that are relevant to your topic. This part of the introduction begins with an umbrella of information about the topic and then narrows to the specific focus of the new study (normally the last sentence of this section/paragraph tells how this connects to the thesis (this is currently missing from the introduction, the connection between the various subsections you have). Definitions of key terms are provided. In this section you carefully select previously published articles to establish a foundation for the new study that is being reported. Drawing on popular press can be effective here if recent news items or data from articles support your cause.
+
+- The Gap. Gap between what is known and what needs to be known. Introducing the challenges or, similarly, a problem can be framed as an opportunity. Whether you are solving a problem or seizing an opportunity, motivate your work by connecting it to things that matter. Near the end of this section, the researcher establishes a gap in the previously reported studies and what questions still need to be answered (e.g., Here are the major papers dealing with this very important topic and here is what they have accomplished. Here are the major flaws/omissions/neglected issues of these papers). This is an important part of the published study because it tells the reader how the new study’s findings relate and add to the knowledge base. For instance, you can use some of the introduction from the IMWUT paper, but focus on eye-tracking (as we focus on physio and facial data there).
+- The Goal. After describing the Gap, you need to describe what is the goal of this study. You can/should also describe the research question(s) or inquiry of the study. Sometimes the inquiry question(s) or statement will be in its own section; other times it will be added in the introduction. Either ways this part of the introduction needs to provide a certain description of the goal and the respective research objectives/questions. This section needs to clarify how the proposed research objectives/questions address the previously identified flaws/omissions/neglected issues and why it is important to address them (not every flaw/omission/neglected issue is necessarily important; maybe it was not addressed because it is trivial…).
+- How this contributes. A good way to end your Introduction is by framing the contributions that your work makes. In the IMWUT paper you can see the contribution structured as a bulleted or numbered list within a paragraph. Try to be as clear as possible.
+
+Also describing the structure of the thesis in the introduction is something many students are doing.
+It will be nice to also have a look in some previous theses, for inspitation on how to structure this section.
+For instance, see here Camila's https://ntnuopen.ntnu.no/ntnu-xmlui/handle/11250/2624223
+
+---
+
+
 Eye-tracking has emerged as a promising non-invasive way to evaluate the effect a task has on a person.
 
 
@@ -76,6 +95,18 @@ Our groups will be the NRMSE-values from the in-study-tests and the NRMSE values
 
 == Related Work
 
+---
+Michalis Comments on the RW:
+
+The primary function of the RW section is to answer the following four questions: “What are the "major/important" relevant works in this topical area? What did they do? What did they find? and How is this work here different? (e.g., might be extending or complementing previous works)”. This last item you need to consider when writing this section is the differentiation of your work (compared to the related studies and works), this is very important since it allows the reader to see the big picture of your study and how your study furthers our knowledge in this particular field.
+
+RW section should not read like a shopping list of who-did what. It should offer insights and education about prior work, and portray the recent developments of the field. It should help readers understand the prior work better than they did before. It is advisable to break this section into sub-sections (themes), this will allow the reader to grasp the various themes better. For instance, if the paper introduces an novel pipeline on extracting generalizable features from gaze data, it is reasonable to report the related work on (1) generalizable features on any human data, (2) gaze data and their particularity, and (3) pipelines that do similar job. The state-of-the art as well as the differentiation of the current work from prior work can then be achieved on a per-theme basis, rather than differentiating against every piece of prior work raised. In the current version, I don't see the nessesery narration (i.e. how this work differs/adds VS previously published work).
+
+The craft of writing this section is based on writers ability to describe what has been done and how this study furthers our knowledge. Thus, it is important to be able to craft the "differentiation" part nicely, without being defensive to previous works and keep a nice narration/flow that nurtures readers' understanding. It is not required that the current work assert itself as “better” than prior work. Rather, current work can be different than prior work and adequately contribute to an important research objective. Asking a different question, using a different method or technique, building on different technological affordances, or focusing on different effects of these affordances (e.g., not necessarily to learning itself, but also on students' motivation and engagement). It is common that the last sentence of each paragraph summarizes the paragraph and provides insights to motivate the next paragraph. At the end of this section, it is important that the reader sees the gaps this study intents to close and the importance of closing this gap.
+
+Again, see examples from previous theses.
+
+---
 
 
 === Eye Tracking
@@ -107,6 +138,24 @@ LHIPA citenp:[duchowskiLowHighIndex2020]
 
 
 == Datasets
+
+---
+
+Michalis Comments on the Datasets:
+I think that we should have a Datasets section and an Analysis section.
+
+The dataset needs to report the datasets selected (and why we selected those datasets). The description below is light (but I guess you are going to extend), but it doesn't say why those datasets have been selected. See here in this paper: https://dl.acm.org/doi/pdf/10.1145/3363384.3363392 How the dataset has been reported in section 3. See also the pre-processing pipeline (as a seperate follow up section). So a good suggestion is presenting the datasets in this section and in the next section presenting a by-dataset pre-processing. Then you can have the analysis.
+
+- see also here: https://link.springer.com/chapter/10.1007/978-3-030-58558-7_22 the data charachteristics.
+
+Currently this section is very heavy and mixes everything (e.g., datasets description, preprocessing and the analysis), you will need to devide and describe each parts.
+
+For the data analtsis you will need to describe how the datasets were analyzed to respond to the research questions/objectives of the thesis. In other words, what is the process you employed to achieve the goal. You needs to describe the systematic process employed to analyze the numeric information collected. The analysis section needs to cover the formal statistical analysis approach employed. For instance is can say “To identify generalizable features, we conduct an exhaustive search of possible analyses and data combinations....". In fact see section 4 of the IMWUT paper and try to describe your pipeline, at the same level of granularity (i.e., allowing the reader to replicate).
+
+Also specify how the analyses were conducted, e.g., the analyses were performed with SPSS 25.0 for Windows.
+
+---
+
 
 We have been working with three different datasets gathered and published by other researchers.
 
@@ -564,7 +613,45 @@ tf.random.set_seed(seed)
 
 == Results and Discussion
 
+---
+
+Michalis Comments on the Results and Discussion:
+
+I am not sure if it is a good idea to have the results together with the discussion section. I know that in the IMWUT paper are together, and you can have them together, but it is not as clean.
+
+The results section speaks for itself: report on the results of your work in an organized way. This section is typically staying away from discussing the importance of the results or describing any potential implications and focusing on just reporting the results. Try to use charts, graphs, and tables as appropriate (use IMWUT paper, or any of the others I sent to you as examples).
+
+For the Discussion section: In this section you will need to interpret the results. 
+
+First summarises the main findings and relate them back to the initial problem of the thesis set out to do (i.e., the RQs). The summary of the findings and connection to the RQs should come early in the discussion section. 
+
+Then, start interpreting them (e.g., What do the results mean? What are the reasons behind results that you obtained? What did the results tell you in light of the related works?). Each of the findings need to be discussed in detail and interpret the findings against related published works (e.g., confirming, falsify and/or extending them). This step is essential to show how contribution (how your work adds to, complements or clarifies the current body of knowledge). The goal of this section, is to enable the reader to understand what the findings mean. Connections are usually made back to the knowledge established in the introduction and the related work sections, showing how the new study’s findings responded to the RQs and closed the knowledge gap described in the introduction.
+
+---
+
+
+
 == Conclusion and Further Work
+
+---
+
+Michalis Comments on the Conclusion and Further Work:
+
+
+This is a very short section the following points:
+
+- summarizes the contributions of this work and clarifies that you have delivered what has been promised in the RQs/Introduction.
+- highlights any key points which you would like the reader to remember (i.e., take-home message).
+- stresses the specific significance of this work and presents a call for future research that would likely extend the reported study’s findings (e.g., in case this work opens avenues for new research).
+
+Since the contributions have already been reported and discussed in the previous sections, it is important to "zoom out" in this section and try to see the wood rather than the tree. Copying and pasting the same text that describes the contribution in other sections should be avoided, however, a limited repetition (rewritten in a simplified manner) can be okay. Try to frame the contributions of the work in a way that a generalist can understand their value, not just for researchers in this particular narrow topic. 
+
+The last part of this section is used to describe the avenues of future research that have been opened from your results and establish a call for future research (e..g., that would extend/complement/exploit your findings). Sometimes researchers use this part to describe their future research. It is often better to offer a few well-thought and important future steps than a "mainstream" list of smaller items (e.g., collecting additional data, implementing a similar study).
+
+Again, use IMWUT paper as an example or any other of the papers I have provided. You can also see the theses I have shared with you.
+
+
+---
 
 
 bibliography::[]
